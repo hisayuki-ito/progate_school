@@ -1,13 +1,323 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
+    <!-- head内に変更を加えないでください-->
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <title>HTML LESSON</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>0からWEBサイトを作ってみよう</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
-    <h1>Hello,world!</h1>
-    <p>20160220 Day2</p>
+    <!-- ここから書き始めてください -->
+    <!--ヘッダー-->
+    <header>
+      <div class="container">
+        <div class="header-title">
+          <a class="header-logo">
+            Progate School
+          </a>
+        </div>
+        <div class="header-menu">
+          <ul class="header-menu-right">
+            <li><a>学習言語</a></li>
+            <li><a>特徴</a></li>
+            <li><a>料金</a></li>
+            <li><a>コラム</a></li>
+            <li><a>お問い合わせ</a></li>
+          </ul>  
+        </div>
+      </div>
+    </header>
+    
+    <!--トップコンテンツ-->
+    <div class="top-section">
+      <div class="inner-bg">
+        <div class="container">
+          <div class="top-description">
+            <h2>プログラミングは人生を変える</h2>
+            <p>プログラミングを学んで、自分の人生のキャリアを開こう。</p>
+          </div>
+          <div class="more-detail">
+            <a class="btn read-more">もっと詳しく</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--学習する言語-->
+    <div class="languages">
+      <div class="container">
+        <div class="section-title">
+          <h3>学習する言語</h3>
+        </div>
+        <div class="languages-wrapper">
+          <div class="language-box">
+            <div class="language-icon">
+              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/html.png">
+            </div>
+            <div class="language-explaination">
+              <h4>HTML & CSS</h4>
+              <p>Webページの見た目をつくる言語</p>
+            </div>
+          </div>
+          <div class="language-box">
+            <div class="language-icon">
+              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/js.png">
+            </div>
+            <div class="language-explaination">
+              <h4>Javascript</h4>
+              <p>動的なウェブサイト構築に用いるプログラミング言語</p>
+            </div>
+          </div>
+          <div class="language-box">
+            <div class="language-icon">
+              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/jquery.png">
+            </div>
+            <div class="language-explaination">
+              <h4>jQuery</h4>
+              <p>効果やアニメーションを実装できるJavascriptライブラリ</p>
+            </div>
+          </div>
+          <div class="language-box">
+            <div class="language-icon">
+              <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/git.png">
+            </div>
+            <div class="language-explaination">
+              <h4>GIT</h4>
+              <p>ソースコードのバージョン管理、共同開発を可能にするツール</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--特徴-->
+    <div class="features">
+      <div class="features-top gray-section">
+        <div class="container">
+          <div class="section-title">
+            <h3>特徴</h3>
+          </div>
+            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mac_code.png">
+        </div>
+      </div>
+      <div class="features-bottom">
+        <div class="container">
+          <div class="feature-boxes-wrapper">
+            <div class="feature-box">
+              <h4>① ProgateでWEB開発の基礎知識を身につけよう</h4>
+              <p>Progateで各コースをクリアして基礎知識を身につけましょう。それぞれ２周することによって知識を定着させます。</p>
+            </div>
+            <div class="feature-box">
+              <h4>② Progateの道場で知識を習得しよう</h4>
+              <p>Progateのコースで基礎知識を身につけたら、実践的な演習をこなしていきましょう。また道場では更に発展的な学習もしていきます。</p>
+            </div>
+            <div class="feature-box">
+              <h4>③ 実際にプロダクトを作ってみよう</h4>
+              <p>Progateで実践的な力を身につけたら自分で１つのプロダクトを作ってみましょう。自分で１から作ってみると、意外に理解できていないことに気づくと思います。 バグを修正しながらプロダクトを完成させることで、エンジニアとしての力を磨きましょう。</p>
+            </div>
+            <div class="feature-box">
+              <h4>④ エンジニアインターンを体験しよう</h4>
+              <p>実際に培ったスキルをインターンを通じて仕事として使ってみましょう。会社のエンジニアとともに仕事をしていくことによって、さらなるスキルアップを目指せるはずです。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--コースを選ぶ-->
+    <div class="gray-section course-section">
+      <div class="container">
+        <div class="section-title">
+          <h3>コースを選ぶ</h3>
+        </div>
+        
+          <div class="course">
+            <h3>短期集中2週間コース</h3>
+            <h4>3万円</h4>
+            <div class="course-detail">
+              <ul>
+                <li>期間 : 2週間</li>
+                <li>チャットでの質問 : ◯</li>
+                <li>オフィスでの質問 : ◯</li>
+              </ul>
+            </div>
+            <a class="btn apply">申し込む
+            </a>
+          </div>
+          <div class="course a_month">
+            <h3>通常1ヶ月コース</h3>
+            <h4>5万円</h4>
+            <div class="course-detail">
+              <ul>
+                <li>期間 : 1ヶ月</li>
+                <li>チャットでの質問 : ◯</li>
+                <li>オフィスでの質問 : ◯</li>
+              </ul>
+            </div>
+            <a class="btn apply">
+              申し込む
+            </a>
+          </div>
+          <div class="course">
+            <h3>土日開発2ヶ月コース</h3>
+            <h4>8万円</h4>
+            <div class="course-detail">
+              <ul>
+                <li>期間 : 2ヶ月</li>
+                <li>チャットでの質問 : ◯</li>
+                <li>オフィスでの質問 : ◯</li>
+              </ul>
+            </div>
+            <a class="btn apply">
+              申し込む
+            </a>
+          </div>
+        
+      </div>
+    </div>
+    
+    <!--メンター紹介-->
+    <div class="mentor-section">
+      <div class="container">
+        <div class="section-title">
+          <h3>メンター紹介</h3>
+          <div class="mentor mentor1">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_1.jpg">
+            <h4>
+              プログラミングサークルでの活動や受託を通じてスキルを磨く。その後は複数のスタートアップに協力しながらプログラミングを教えるようになり、これをオンラインのサービスとして提供したいと思い、2014年7月に株式会社Progateを創業、現代表取締役。
+            </h4>
+            <p>-加藤将倫</p>
+          </div>
+          <div class="mentor mentor2">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_2.jpg">
+            <h4>
+              ３年生の秋にエンジニアを集めるために東大プログラミングサークル「ZEROXONE」をたちあげる。自分の人生はプログラミングを身につけたことによって劇的に変わりました。みんなにも同じ体験をしてもらいたくてProgateを作っています！
+            </h4>
+            <p>-村井謙太</p>
+          </div>
+          <div class="mentor mentor3">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_3.jpg">
+            <h4>
+              ProgateではUI/UXを担当。ユーザーに夢中で楽しんでもらえるようなサービス設計、学びによって人生を豊かにできるようなサービスを目指し、日々プロダクト改善に取り組んでいる。テクノロジー・デザイン・ビジネスの分野で、領域横断的に活動し、人々がワクワクして止まないモノを生み出せる人間で在りたいと思う。
+            </h4>
+            <p>-神田美智</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--中間写真-->
+    <div class="middle-image">
+      <div class="middle-image-bg">
+        <div class="container">
+          <div class="middle-image-comment">
+            <h4>プログラミングを学ぶのなら、生涯仕事に困らないことを私が保証しよう。</h4>
+            <h4>-Facebook元役員</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--中間写真おわり-->
+    <!--コラム-->
+    <div class="column-section gray-section">
+      <div class="container">
+        <div class="section-title">
+          <h3>コラム</h3>
+        </div>
+        <div class="column-filters">
+          <div class="column-filter all-filter">
+            show all
+          </div>
+          <div class="column-filter">
+            コラム
+          </div>
+          <div class="column-filter">
+            プログラミングTips
+          </div>
+        </div>
+        <div class="column-wrapper">
+          <div class="column">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/programmer.jpg">
+            <h4>20代のエンジニアが初めての転職でつまずきやすい点</h4>
+            <p>コラム</p>
+          </div>
+          <div class="column">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/html5.jpg">
+            <h4>HTML5の新タグについて</h4>
+            <p>HTML</p>
+          </div>
+          <div class="column">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/js.jpg">
+            <h4>Javascriptの文法まとめ</h4>
+            <p>Javascript</p>
+          </div>
+          <div class="column">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/books.jpg">
+            <h4>新卒ソフトウェアエンジニアのための技術書100冊</h4>
+            <p>コラム</p>
+          </div>
+          <div class="column">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/engineer.jpg">
+            <h4>「プレイヤーでも年収1000万円に」エンジニアの評価制度</h4>
+            <p>コラム</p>
+          </div>
+          <div class="column">
+            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/inspect.jpg">
+            <h4>要素の検証をしてみよう</h4>
+            <p>HTML/CSS</p>
+          </div>
+          <div class="load-more">Load More</div>
+        </div>
+      </div>
+    </div>
+    <!--コラムおわり-->
+    <!--問い合わせスタート-->
+    <div class="form-section">
+      <div class="form-bg">
+        <div class="container">
+          <div class="section-title">
+            <h3>お問い合わせ</h3>
+          </div>
+          <div class="form-content">
+            <div class="contact">
+              <h4>メッセージを送る</h4>
+              <form>
+                <input type="email" class="email" placeholder="Email">
+                <input type="text" class="subject" placeholder="Subject">
+                <textarea class="message" placeholder="Message"></textarea>
+                <input type="submit" class="submit" value="Submit">
+              </form>
+            </div>
+            <div class="aboutus">
+              <h4>About Us</h4>
+              <p>プログラミングは世界を変える力です。 そしてあなたの人生を変える力です。 この信念は、私たち自身がプログラミングで人生を変えてきた原体験に基づいています。 この原体験をもとに、Progateは 「初心者から、創れる人を生み出す」 ことを理念としています。 プログラミングの最初のハードルを徹底的に低くし、世界一わかりやすく、楽しい学習環境を作ります。プログラミングを学びたい人の、せっかくの一歩を挫折で終わらせないために、私たちは全力で皆様に寄り添い、日本のプログラミング教育を変えていきます。 私たちと一緒にプログラミングを学んでみませんか？</p>
+              <h4 class="address">Address</h4>
+              <p><i class="fa fa-map-marker"></i>東京都渋谷区神泉町20-24 Bricks 7F</p>
+              <p class="phone">Phone: 03-6455-0950</p>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <!--問い合わせおわり-->
+    <!--フッターはじまり-->
+    <footer>
+      <div class="container">
+        <div class="section-title">
+          <h3>Follow Us!</h3>
+        <!--</div>-->
+        <!--<div class="follow-icon">-->
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+        </div>
+      </div>
+      <div class="copyright">
+          ©2015- Progate
+      </div>
+      
+    </footer>
+    <!--フッターおわり-->
   </body>
 </html>
-

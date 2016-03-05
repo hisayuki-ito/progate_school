@@ -1,4 +1,454 @@
-h1 {
-    color: #07b496;
-    
+/*-------  ここから共通のCSS（変更不要）  --------*/
+body {
+  /*width: 1200px;*/
+  margin: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #888;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #323A45;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #0dc0c0;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+h4, h5 {
+  color: #444;
+  font-size: 18px;
+}
+
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*-------  ここまで共通のCSS（変更不要） --------*/
+
+/*------- ここからCSSを書き始めてください --------*/
+/*ここから各セクション共通*/
+.section-title {
+  color: #555;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.section-title h3 {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.gray-section{
+  background-color:#f4f4f4;
+}
+
+.btn{
+  font-size:18px;
+  font-weight:500;
+  padding:15px 20px;
+}
+
+/*ここまで各セクション共通*/
+/*ここからヘッダー*/
+header{
+  line-height:50px;
+  box-shadow:0px 1px 1px rgba(0,0,0,0.1);
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:50px;
+  z-index:10;
+  background-color:white;
+}
+
+.header-title{
+  float:left;
+}
+
+.header-logo{
+  color: #777;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: 'Dosis', sans-serif;
+}
+
+/*.header-menu{*/
+/*  float:right;*/
+/*}*/
+
+.header-menu-right{
+  float:right;
+  /*ーーーー見本と異なるサイズになるーーーーーーー*/
+  /*margin-top:10px;*/
+}
+
+.header-menu-right li{
+  float:left;
+}
+
+.header-menu-right li{
+  color: #323A45;
+    font-weight: 700;
+    line-height: 29px;
+    padding: 10px;
+}
+/*ここまでヘッダー*/
+/*ここからトップコンテンツ*/
+.top-section{
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background-image: url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/top.jpg");
+  background-size: cover;
+}
+
+
+.inner-bg {
+  padding: 0;
+  padding-top: 180px;
+  padding-bottom: 120px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.top-description{
+  margin-top:20px;
+  margin-bottom:50px;
+}
+
+.top-description h2{
+  color:#f3f3f3;
+  font-size:48px;
+  margin-bottom:30px;
+}
+
+.top-description p{
+  color:rgba(255, 255, 255, 0.8);
+  font-size:18px;
+}
+
+.read-more{
+  color:#f3f3f3;
+  /*font-size:18px;*/
+  /*font-weight:500;*/
+  background-color:rgba(255, 255, 255, 0.1);
+  /*padding:15px 20px;*/
+  border:0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.read-more:hover{
+  color:#f3f3f3;
+  border:0.5px solid rgba(255, 255, 255, 1);
+}
+/*ここまでトップコンテンツーーーーーーーーーーーーーーーーーーーー*/
+/*ここから言語*/
+.languages{
+  text-align:center;
+  padding-bottom:60px;
+}
+
+.languages-wrapper{
+  width:80%;
+  margin:0 auto;
+  
+}
+
+.language-box{
+  display:inline-block;
+  width:38%;
+  padding:20px;
+}
+/*ここまで言語ーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+/*ここから特徴*/
+.features-top{
+  height:376px;
+  text-align:center;
+}
+
+.feature-boxes-wrapper{
+  padding:120px 0 0 10px;
+}
+
+.feature-box{
+  display:inline-block;
+  width:41%;
+  margin-left:60px;
+  margin-bottom:60px;
+  vertical-align:top;
+}
+/*ここまで特徴*ーーーーーーーーーーーーーーーーーーーーーーーー/
+/*ここからコース*/
+
+.course-section{
+  padding-bottom:100px;
+}
+
+.course{
+  width:28%;
+  background-color:white;
+  text-align:center;
+  vertical-align:top;
+  padding:40px 15px 80px;
+  display:inline-block;
+  margin-left:20px;
+}
+
+.course h3{
+  font-size:32px;
+  padding:30px 0;
+  color:white;
+  background-color:#323A45;
+  margin:0;
+}
+
+.course h4{
+  font-size:30px;
+  padding:40px 0;
+  background-color:#f0f0f0;
+  margin:0;
+}
+
+.course-detail{
+  margin-bottom:20px;
+}
+
+.course ul{
+  padding:30px;
+}
+
+.course li{
+  border-bottom:1px solid rgba(0,0,0,0.1);
+  padding:20;
+}
+
+.apply{
+  background-color:#2d323a;
+  color:white;
+  
+}
+
+.a_month h3{
+  background-color:#0DC0C0;
+}
+
+/*ここからメンター紹介ーーーーーーーーーーーーーーーーーー*/
+.mentor{
+  padding:20px 115px 40px;
+  
+}
+
+.mentor img{
+  width:200px;
+  border-radius:200px;
+  margin-bottom:10px;
+}
+/*ここまでメンター紹介ーーーーーーーーーーーーーーーーーーーーー*/
+/*ここから中間写真ーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.middle-image{
+  background-image:url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/night_view.jpg");
+  background-size:cover;
+  text-align:center;
+}
+
+.middle-image-bg{
+  padding: 0;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.middle-image-comment h4{
+  color:#f3f3f3; 
+  font-size:22px;
+}
+/*ここまで中間写真ーーーーーーーーーーーーーーーーーー*/
+/*ここからコラムーーーーーーーーーーーーーーーーーーーーー*/
+.column-section{
+  padding-bottom:40px;
+}
+
+.column-filters{
+  text-align:center;
+  margin-top:10px;
+  margin-bottom:40px;
+}
+
+.column-filter{
+  display:inline-block;
+  background-color:white;
+  padding:10px 15px;
+  margin-left:5px;
+  cursor:pointer;
+  font-weight:600;
+  font-family: "Dosis", sans-serif;
+  font-size:16px;
+  color:black;
+}
+
+.column-filter:hover,.all-filter{
+  background-color:#009ca8;
+  color:white;
+}
+
+.column-wrapper{
+  text-align:center;
+}
+
+
+.column{
+  background-color:white;
+  display:inline-block;
+  width:40%;
+  margin:0 20px 30px;
+  padding:5px 5px 20px 5px;
+  cursor:pointer;
+  box-shadow:0 1px 2px rgba(0,0,0,0.2);
+}
+
+.column img{
+  width:100%;
+}
+
+.column h4{
+  font-weight:600;
+  font-size:17px;
+  color:black;
+  margin-bottom:0;
+}
+
+.column p{
+  cursor:text;
+}
+
+.load-more{
+  color:white;
+  background-color:#2d323a;
+  padding:10px 20px;
+  margin:20px;
+  display:inline-block;
+  font-weight:400;
+  font-family: "Dosis", sans-serif;
+  font-size:18px;
+}
+/*ここまでコラムーーーーーーーーーーーーーーーーーーーーーーーー*/
+/*ここからお問い合わせーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.form-section{
+  background-image:url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/contact.jpg");
+  background-size:cover;
+}
+
+.form-bg{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form-section h3{
+  color:white;
+  
+}
+
+.form{
+  /*bgに負けてる。このあたりの優先順位のつきかた*/
+  /*color:white;*/
+}
+
+.contact{
+  display:inline-block;
+  width:48%;
+}
+
+.contact h4,.aboutus h4{
+  color:#f3f3f3; 
+  font-size:22px;
+}
+
+input,textarea{
+  background-color:rgba(255,255,255,0.1);
+  border:none;
+  width:100%;
+  margin:10px 0;
+  font-size:18px;
+  padding:15px;
+  color:white;
+}
+
+textarea{
+  height:150px;
+}
+
+.submit{
+  background-color:#0DC0C0;
+  width:120px;
+  font-weight:700;
+  font-family: "Dosis", sans-serif;
+  margin-top:20px;
+  margin-bottom:90px;
+}
+
+.aboutus{
+  display:inline-block;
+  width:40%;
+  vertical-align:top;
+  margin-left:110px;
+}
+
+.aboutus h4{
+  margin-bottom:20px;
+}
+
+.aboutus p{
+  padding-bottom:20px;
+  color:white;
+  line-height:24px;
+}
+
+.address{
+  padding-top:0px;
+}
+
+.phone{padding-left:20px;}
+
+.fa-map-marker{
+  font-size:20px;
+  margin-right:20;
+}
+
+
+.fa-facebook,.fa-twitter{
+  /*display:inline-block;*/
+  font-size:36px;
+  padding:30px 10px 60px;
+  color:black;
+}
+
+.copyright{
+  background-color:#222;
+  text-align:center;
+  padding:40px;
 }

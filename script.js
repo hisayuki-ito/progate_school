@@ -39,5 +39,40 @@ $(function(){
 	    }
 	  );
 
-	
+// 問７　コラム絞り込み
+
+	  $('#no-category-filter').click(function(){
+	  	$('.column-pg').fadeOut();
+        $('.no-category').fadeIn();
+        $('#no-category-filter').addClass('selected');
+        $('#column-pg-filter').removeClass('selected');
+        $('#all-filter').removeClass('selected');
+
+
+	  	// $('.column-pg').css('display','none');
+    //     $('.no-category').css('display','inline-block');
+	  });
+
+	  $('#column-pg-filter').click(function(){
+	  	$('.no-category').fadeOut();
+	  	$('.column-pg').fadeIn();
+	  	$('#no-category-filter').removeClass('selected');
+        $('#column-pg-filter').addClass('selected');
+        $('#all-filter').removeClass('selected');
+	  	// $('.no-category').css('display','none');
+	  	// $('.column-pg').css('display','inline-block');
+	  });
+
+	  $('#all-filter').click(function(){
+	  	$('.no-category').fadeIn();
+	  	$('.column-pg').fadeIn();
+	  	$('#no-category-filter').removeClass('selected');
+        $('#column-pg-filter').removeClass('selected');
+        $('#all-filter').addClass('selected');
+	  	// $('.no-category').css('display','none');
+	  	// $('.column-pg').css('display','inline-block');
+	  });
+
+
+
 });

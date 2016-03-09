@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
   <body>
     <!-- ここから書き始めてください -->
@@ -28,19 +29,21 @@
             <li><a>お問い合わせ</a></li>
           </ul>  
         </div>
+        <div class="clearfix"></div>
       </div>
     </header>
     
     <!--トップコンテンツ-->
     <div class="top-section">
-      <div class="inner-bg">
+      <div class="inner-bg">ß
         <div class="container">
           <div class="top-description">
             <h2>プログラミングは人生を変える</h2>
             <p>プログラミングを学んで、自分の人生のキャリアを開こう。</p>
           </div>
           <div class="more-detail">
-            <a class="btn read-more">もっと詳しく</a>
+            <a id="read-more-btn" class="btn read-more">もっと詳しく</a>
+            <p id="intro">私がプログラミングを身につけて一番に感じたことは「自由」です。プログラミングができるようになる前は、どこかの企業に就職しないと食べていけないという恐怖感がありました。どこかに依存しないと生きていけないという感覚です。プログラミングで仕事をするようになって気づいたことは、どの企業もエンジニアを必要としていて、仕事も山のようにあるということでした。エンジニアで業務委託を受ければ月６０万〜１００万程度の収入になります。半年だけ働いて後は自分の時間に使うという働き方も可能です。在宅や海外でも働けます。世の中に必要とされる技術を磨き続けている限り自分は食べていけるという自信は、将来への不安を減らしてくれました。</p>
           </div>
         </div>
       </div>
@@ -59,7 +62,7 @@
             </div>
             <div class="language-explaination">
               <h4>HTML & CSS</h4>
-              <p>Webページの見た目をつくる言語</p>
+              <p class="lang-sentence">Webページの見た目をつくる言語</p>
             </div>
           </div>
           <div class="language-box">
@@ -68,7 +71,7 @@
             </div>
             <div class="language-explaination">
               <h4>Javascript</h4>
-              <p>動的なウェブサイト構築に用いるプログラミング言語</p>
+              <p class="lang-sentence">動的なウェブサイト構築に用いるプログラミング言語</p>
             </div>
           </div>
           <div class="language-box">
@@ -77,7 +80,7 @@
             </div>
             <div class="language-explaination">
               <h4>jQuery</h4>
-              <p>効果やアニメーションを実装できるJavascriptライブラリ</p>
+              <p class="lang-sentence">効果やアニメーションを実装できるJavascriptライブラリ</p>
             </div>
           </div>
           <div class="language-box">
@@ -86,7 +89,7 @@
             </div>
             <div class="language-explaination">
               <h4>GIT</h4>
-              <p>ソースコードのバージョン管理、共同開発を可能にするツール</p>
+              <p class="lang-sentence">ソースコードのバージョン管理、共同開発を可能にするツール</p>
             </div>
           </div>
         </div>
@@ -239,7 +242,8 @@
         </div>
         <div class="column-wrapper">
           <div class="column">
-            <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/programmer.jpg">
+            <div class="column-image"></div>
+            <!-- <img class="column-image" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/portfolio/programmer.jpg"> -->
             <h4>20代のエンジニアが初めての転職でつまずきやすい点</h4>
             <p>コラム</p>
           </div>
@@ -319,5 +323,6 @@
       
     </footer>
     <!--フッターおわり-->
+    <script src="script.js"></script>
   </body>
 </html>

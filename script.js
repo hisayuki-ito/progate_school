@@ -28,11 +28,13 @@ $(function(){
 // 問６　コラム画像ホバー
       $('.column-image').hover(
 	    function() {
-	      $(this).css('zoom','1.2');
+	      $(this).css('background-size','120%');
+	      $(this).children('.zoom-bg').fadeIn();
 	      
 	    },
 	    function() {
-	      $(this).find('.lang-sentence').removeClass('text-active');
+	      $(this).css('background-size','100%');
+	      $(this).children('.zoom-bg').fadeOut();
 	      
 	    }
 	  );

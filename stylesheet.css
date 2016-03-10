@@ -89,6 +89,8 @@ header{
   background-color:white;
 }
 
+header a{}
+
 .header-title{
   float:left;
 }
@@ -113,9 +115,6 @@ header{
 
 .header-menu-right li{
   float:left;
-/*}
-
-.header-menu-right li{*/
   color: #323A45;
   font-weight: 700;
   line-height: 29px;
@@ -242,13 +241,14 @@ header{
 }
 
 .course{
-  width:28%;
+  width:31%;
   background-color:white;
   text-align:center;
   vertical-align:top;
   padding:40px 15px 80px;
   display:inline-block;
-  margin-left:20px;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .course h3{
@@ -276,7 +276,7 @@ header{
 
 .course li{
   border-bottom:1px solid rgba(0,0,0,0.1);
-  padding:20;
+  padding:20px;
 }
 
 .apply{
@@ -290,15 +290,31 @@ header{
 }
 
 /*ここからメンター紹介ーーーーーーーーーーーーーーーーーー*/
+.mentor-section{
+	padding-bottom:60px;
+}
+
 .mentor{
   padding:20px 115px 40px;
+  text-align:center;
+  margin-bottom:28px;
   
 }
 
-.mentor img{
+.mentor img,.mentor-image{
   width:200px;
   border-radius:200px;
-  margin-bottom:10px;
+  /*margin-bottom:10px;*/
+  margin:0 auto 10px;
+}
+
+.carousel-indicators li{
+	background-color:gray;
+    margin-top:20px;
+}
+
+.carousel-indicators .active{
+	background-color:gray;
 }
 /*ここまでメンター紹介ーーーーーーーーーーーーーーーーーーーーー*/
 /*ここから中間写真ーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/

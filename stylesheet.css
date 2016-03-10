@@ -94,6 +94,7 @@ header{
 }
 
 .header-logo{
+  cursor:pointer;
   color: #777;
   font-weight: 700;
   font-size: 22px;
@@ -112,13 +113,14 @@ header{
 
 .header-menu-right li{
   float:left;
-}
+/*}
 
-.header-menu-right li{
+.header-menu-right li{*/
   color: #323A45;
-    font-weight: 700;
-    line-height: 29px;
-    padding: 10px;
+  font-weight: 700;
+  line-height: 29px;
+  padding: 10px;
+  cursor:pointer;
 }
 
 .clearfix{

@@ -1,5 +1,38 @@
 $(function(){
 
+// 問１　スクロール
+      $('.page-top').click(function(){
+      	$("html,body").animate({scrollTop:0});
+      });
+
+      $('#languages-top').click(function(){
+      	$("html,body").animate({scrollTop:$('#languages-section').offset().top});
+      });
+
+      $('#features-top').click(function(){
+      	$("html,body").animate({scrollTop:$('#features-section').offset().top});
+      });
+
+      $('#pricing-top').click(function(){
+      	$("html,body").animate({scrollTop:$('#pricing-section').offset().top});
+      });
+
+      $('#columns-top').click(function(){
+      	$("html,body").animate({scrollTop:$('#columns-section').offset().top});
+      });
+
+      $('#form-top').click(function(){
+      	$("html,body").animate({scrollTop:$('#form-section').offset().top});
+      });
+
+      $('header a').click(function(){
+      	$('header a').css('text-decoration','none');
+      	$(this).css('text-decoration','underline');
+      });
+      
+
+
+
 // 問題２　もっと詳しくボタン
 	  $('#read-more-btn').click(function(){
 	  	if($(this).hasClass('open')){

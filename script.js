@@ -58,6 +58,23 @@ $(function(){
 	    }
 	  );
 
+
+
+	// 問４　モーダル
+	$('.apply').click(function() {
+	    $('#apply-modal').fadeIn();
+		    var id = $(this).parents('.course').attr('id');
+		    var title = $('#' + id).children('h3').text();
+	    $('#course-select').val(id);
+	    $('#apply-form').children('h2').text('【'+title+'】'+'に申し込む');
+    });
+
+　　　$('#close-modal').click(function() {
+     	$('#apply-modal').fadeOut();
+  　 });
+
+
+
 // 問６　コラム画像ホバー
       $('.column-image').hover(
 	    function() {
@@ -106,6 +123,35 @@ $(function(){
 	  	// $('.column-pg').css('display','inline-block');
 	  });
 
+
+// 問８　フォームバリデーション
+      $(function(){
+	$("form").validate({
+		rules: {
+			// name :{
+			// 	required: true
+			// },
+			email :{
+				required: true,
+				email: true
+			},
+		// 	url :{
+		// 		required: true
+		// 	}
+		// },
+		// messages: {
+		// 	name :{
+		// 		required: "お名前を入力してください"
+		// 	},
+			email :{
+				required: "メールアドレスを入力してください"
+			},
+		// 	url :{
+		// 		required: "URLを入力してください"
+		// 	}
+		}
+	});
+})
 
 
 });

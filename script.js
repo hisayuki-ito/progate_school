@@ -157,6 +157,7 @@ $(function(){
        
       });
 
+// eachで繰り返し処理しようとして、挫折ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
       // $('contact form').submit(function(){
       // 	// $(this).children('input, textarea').each(function() {

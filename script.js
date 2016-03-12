@@ -129,6 +129,7 @@ $(function(){
 
 // 問８　フォームバリデーション
       $('.contact form').submit(function(){
+      	    var flag = 0;
 	    	if($('#input1').val() == ''){
 	            $('#input1').prev('.error-message').text('入力してください。');
 	            flag = 1; 
@@ -151,6 +152,14 @@ $(function(){
 	    	}
 
             if(flag == 1){
+            	return false;
+            }
+
+            if(flag == 0)
+            {
+            	// $('.contact').children('h4').text('お問い合わせありがとうございます。')；これではエラーになる。
+            	$('.contact').html('<h4>お問い合わせありがとうございます。</h4>');
+            	// $('form').css('display','none');
             	return false;
             }
 

@@ -567,7 +567,7 @@ input,textarea{
   background-color:rgba(255,255,255,0.1);
   border:none;
   width:100%;
-  margin:10px 0;
+  margin:0px 0 10px;
   font-size:18px;
   padding:15px;
   color:white;
@@ -585,6 +585,12 @@ textarea{
   margin-top:20px;
   margin-bottom:90px;
 }
+
+.error-message{
+	color:red;
+	height:20px;
+}
+
 
 .aboutus{
   display:inline-block;

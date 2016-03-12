@@ -341,10 +341,13 @@
           <div class="form-content">
             <div class="contact">
               <h4>メッセージを送る</h4>
-              <form class="required">
-                <input type="email" class="email" placeholder="Email" name="email">
-                <input type="text" class="subject" placeholder="Subject">
-                <textarea class="message" placeholder="Message"></textarea>
+              <form>
+                <div class="error-message"></div>
+                <input id="input1" type="email" class="email" placeholder="Email">
+                <div class="error-message"></div>
+                <input id="input2" type="text" class="subject" placeholder="Subject">
+                <div class="error-message"></div>
+                <textarea id="textarea1" class="message" placeholder="Message"></textarea>
                 <input type="submit" class="submit" value="Submit">
               </form>
             </div>
@@ -377,7 +380,6 @@
       
     </footer>
     <!--フッターおわり-->
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>

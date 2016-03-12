@@ -74,6 +74,9 @@ $(function(){
   　 });
 
 
+// 　　　問５　フォームバリデーション
+    
+
 
 // 問６　コラム画像ホバー
       $('.column-image').hover(
@@ -125,33 +128,76 @@ $(function(){
 
 
 // 問８　フォームバリデーション
-      $(function(){
-	$("form").validate({
-		rules: {
-			// name :{
-			// 	required: true
-			// },
-			email :{
-				required: true,
-				email: true
-			},
-		// 	url :{
-		// 		required: true
-		// 	}
-		// },
-		// messages: {
-		// 	name :{
-		// 		required: "お名前を入力してください"
-		// 	},
-			email :{
-				required: "メールアドレスを入力してください"
-			},
-		// 	url :{
-		// 		required: "URLを入力してください"
-		// 	}
-		}
-	});
-})
+      $('.contact form').submit(function(){
+	    	if($('#input1').val() == ''){
+	            $('#input1').prev('.error-message').text('入力してください。');
+	            flag = 1; 
+	    	}else{
+	            $('#input1').prev('.error-message').text('');
+	    	}
+
+	    	if($('#input2').val() == ''){
+	            $('#input2').prev('.error-message').text('入力してください。');
+	            flag = 1;
+	    	}else{
+	            $('#input2').prev('.error-message').text('');
+	    	}
+
+	    	if($('#textarea1').val() == ''){
+	            $('#textarea1').prev('.error-message').text('入力してください。');
+	            flag = 1;
+	    	}else{
+	            $('#textarea1').prev('.error-message').text('');
+	    	}
+
+            if(flag == 1){
+            	return false;
+            }
+
+       
+      });
+
+
+      // $('contact form').submit(function(){
+      // 	// $(this).children('input, textarea').each(function() {
+    	 //    var sending_content = $(this).val();
+	    	// if(sending_content == ''){
+	     //        $('.error-message').text('入力してください。');
+	     //        return false;
+	    	// }else{
+	     //        $('.error-message').text('');
+	    	// }
+      //   });
+      // });
+
+
+//       $(function(){
+// 	$("form").validate({
+// 		rules: {
+// 			// name :{
+// 			// 	required: true
+// 			// },
+// 			email :{
+// 				required: true,
+// 				email: true
+// 			},
+// 		// 	url :{
+// 		// 		required: true
+// 		// 	}
+// 		// },
+// 		// messages: {
+// 		// 	name :{
+// 		// 		required: "お名前を入力してください"
+// 		// 	},
+// 			email :{
+// 				required: "メールアドレスを入力してください"
+// 			},
+// 		// 	url :{
+// 		// 		required: "URLを入力してください"
+// 		// 	}
+// 		}
+// 	});
+// })
 
 
 });
